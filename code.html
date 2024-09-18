@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Ticker</title>
+    <style>
+        .ticker-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: tickerAnimation 20s linear infinite;
+        }
+        @keyframes tickerAnimation {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-container">
+        <div class="ticker">
+            <span>Breaking News: Your latest updates go here. Stay tuned for more information!</span>
+        </div>
+    </div>
+</body>
+</html>
